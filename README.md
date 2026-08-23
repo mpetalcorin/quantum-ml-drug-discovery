@@ -217,9 +217,7 @@ The evaluation code reports:
 
 The e3nn network uses spherical harmonics and tensor products so intermediate features transform consistently under 3D rotations and reflections. The final molecular energy is a scalar. Forces are obtained as
 
-\[
-\mathbf F_i = -\frac{\partial E}{\partial \mathbf R_i},
-\]
+**𝐅ᵢ = −∂E / ∂𝐑ᵢ**
 
 which guarantees an energy-conserving force field when the predicted energy is differentiable with respect to coordinates.
 
