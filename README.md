@@ -1,7 +1,7 @@
 # Quantum ML Drug Discovery
 
 **Physics-grounded machine learning for small-molecule energetics, forces, conformer ranking, uncertainty, active learning, and a PARP1 DNA-repair case study.**
-
+<img width="1448" height="1086" alt="Quantum ML Drug Discovery" src="https://github.com/user-attachments/assets/4f215975-450c-49af-b3b8-ae7449f49e0d" />
 This repository is designed as a focused portfolio project for machine-learning roles at the interface of quantum chemistry and small-molecule drug discovery. The core idea is **delta learning**:
 
 \[
