@@ -1,0 +1,16 @@
+molecule_id,name,smiles,charge,multiplicity,group
+mol001,ethanol,CCO,0,1,small
+mol002,propanol,CCCO,0,1,small
+mol003,acetone,CC(=O)C,0,1,small
+mol004,acetamide,CC(=O)N,0,1,small
+mol005,ethyl_acetate,CCOC(=O)C,0,1,small
+mol006,aniline,Nc1ccccc1,0,1,aromatic
+mol007,phenol,Oc1ccccc1,0,1,aromatic
+mol008,benzamide,NC(=O)c1ccccc1,0,1,aromatic
+mol009,fluorobenzene,Fc1ccccc1,0,1,aromatic
+mol010,pyridine,n1ccccc1,0,1,heteroaromatic
+mol011,indazole,c1ccc2[nH]ncc2c1,0,1,heteroaromatic
+mol012,quinazolinone,O=C1NC2=CC=CC=C2N=C1,0,1,heteroaromatic
+mol013,caffeine,Cn1c(=O)c2c(ncn2C)n(C)c1=O,0,1,druglike
+mol014,acetaminophen,CC(=O)NC1=CC=C(C=C1)O,0,1,druglike
+mol015,benzocaine,CCOC(=O)c1ccc(N)cc1,0,1,druglike

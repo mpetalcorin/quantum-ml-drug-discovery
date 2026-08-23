@@ -1,0 +1,40 @@
+seed: 17
+paths:
+  molecules: data/seed/parp1_ligands.csv
+  conformers: data/parp1_conformers
+  qm: data/parp1_qm
+  processed: data/parp1_processed
+  models: models/parp1
+  results: results/parp1
+conformers:
+  n_conformers: 12
+  prune_rms_thresh: 0.30
+  optimize_mmff: true
+xtb:
+  method: GFN2-xTB
+  accuracy: 1.0
+pyscf:
+  functional: b3lyp
+  basis: def2-svp
+  grid_level: 2
+  max_cycle: 100
+model:
+  cutoff: 5.5
+  hidden_irreps: "32x0e + 16x1o + 8x2e"
+  layers: 2
+  radial_basis: 8
+  radial_layers: 2
+  radial_neurons: 64
+  epochs: 60
+  batch_size: 4
+  learning_rate: 0.001
+  weight_decay: 0.000001
+  force_weight: 0.05
+  ensemble_size: 3
+split:
+  mode: molecule
+  train: 0.50
+  val: 0.25
+  test: 0.25
+active_learning:
+  acquire_n: 8

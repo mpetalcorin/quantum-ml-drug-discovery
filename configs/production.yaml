@@ -1,0 +1,40 @@
+seed: 17
+paths:
+  molecules: data/seed/molecules.csv
+  conformers: data/conformers
+  qm: data/qm
+  processed: data/processed
+  models: models
+  results: results
+conformers:
+  n_conformers: 20
+  prune_rms_thresh: 0.25
+  optimize_mmff: true
+xtb:
+  method: GFN2-xTB
+  accuracy: 0.5
+pyscf:
+  functional: wb97x-d
+  basis: def2-tzvp
+  grid_level: 4
+  max_cycle: 150
+model:
+  cutoff: 6.0
+  hidden_irreps: "64x0e + 32x1o + 16x2e"
+  layers: 3
+  radial_basis: 12
+  radial_layers: 3
+  radial_neurons: 128
+  epochs: 300
+  batch_size: 16
+  learning_rate: 0.0005
+  weight_decay: 0.000001
+  force_weight: 0.10
+  ensemble_size: 5
+split:
+  mode: scaffold
+  train: 0.70
+  val: 0.15
+  test: 0.15
+active_learning:
+  acquire_n: 50
