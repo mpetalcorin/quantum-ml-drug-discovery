@@ -233,10 +233,7 @@ which guarantees an energy-conserving force field when the predicted energy is d
 4. Protein–ligand binding requires solvation, protein flexibility, entropy, protonation/tautomer states, and often much more extensive sampling.
 5. PARP inhibitor trapping and cytotoxicity are mechanistically richer than affinity alone.
 
-## Portfolio narrative
-
-A concise way to explain this repository in an interview:
+## Description
 
 > I built a reproducible quantum-ML pipeline in which GFN2-xTB supplies a fast physical baseline, DFT supplies higher-fidelity labels, and an E(3)-equivariant graph network learns the correction. I derive forces through the energy gradient, evaluate conformer ranking and OOD behavior, quantify ensemble uncertainty, and use that uncertainty to decide which molecular geometries should receive the next expensive DFT calculations. I then connect the workflow to PARP1 inhibitor chemistry while explicitly separating intramolecular energetics from biological efficacy.
 
-See `docs/INTERVIEW_GUIDE.md` for technical questions this project is designed to help answer.
