@@ -233,3 +233,6 @@ which guarantees an energy-conserving force field when the predicted energy is d
 
 > I built a reproducible quantum-ML pipeline in which GFN2-xTB supplies a fast physical baseline, DFT supplies higher-fidelity labels, and an E(3)-equivariant graph network learns the correction. I derive forces through the energy gradient, evaluate conformer ranking and OOD behavior, quantify ensemble uncertainty, and use that uncertainty to decide which molecular geometries should receive the next expensive DFT calculations. I then connect the workflow to PARP1 inhibitor chemistry while explicitly separating intramolecular energetics from biological efficacy.
 
+## Citation
+
+**Mark I.R. Petalcorin** (2026). https://github.com/mpetalcorin/quantum-ml-drug-discovery
